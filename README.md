@@ -49,7 +49,7 @@ and basic algorithms. At 42, certain standard libraries are prohibited in our pr
 * [`ft_memchr`](42_libft/ft_memchr.c)		- locate byte in byte string.
 * [`ft_memcmp`](42_libft/ft_memcmp.c)		- compare byte string.
 * [`ft_strnstr`](42_libft/ft_strnstr.c)			- locate a substring in a string (size-bounded).
-* [`ft_atoi`](blob/main/ft_atoi.c)		- convert ASCII string to integer.
+* [`ft_atoi`](ft_atoi.c)		- convert ASCII string to integer.
 * [`ft_calloc`](42_libft/ft_calloc.c)	- memory allocation.
 * [`ft_strdup`](42_libft/ft_strdup.c)				- save a copy of a string (with malloc).
 * [`ft_substr`](42_libft/ft_substr.c)				- extract substring from string.
