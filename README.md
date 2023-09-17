@@ -19,7 +19,7 @@
 This project is about coding a C library.<br>
 It will contain a lot of general purpose functions your programs will rely upon.<br>
 42 makes us do this just so we can have a deeper understanding of data structures 
-and basic algorithms. At 42, certain standard libraries are prohibited in our projects, compelling us to continually expand our custom library with self-built functions as we advance in the program.
+and basic algorithms. At 42, certain standard libraries are prohibited in our projects, compelling us to continually expand our custom library with self-built functions as we advance in the program.<br>
 
 > ⚠️ **Warning**: Don't copy/paste code you don't understand: it's bad for you, and for the school.
 
