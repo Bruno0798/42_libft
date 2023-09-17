@@ -82,7 +82,7 @@ $ make
 
 You should see a *libft.a* file and some object files (.o).
 
-### MAKEFILE RULES
+## MAKEFILE RULES
 
 `make` - Compile libft **mandatory** files.
 
