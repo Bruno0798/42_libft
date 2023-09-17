@@ -58,7 +58,7 @@ and basic algorithms. At 42, certain standard libraries are prohibited in our pr
 * [`ft_striteri`](ft_striteri.c)			- applies a provided function to each character in a string.
 * [`ft_putchar_fd`](ft_putchar_fd.c)		- output a character to given file.
 * [`ft_putstr_fd`](ft_putstr_fd.c)		- output string to given file.
-* [`ft_putendl`](ft_putendl.c) 	- output string to stdout with newline.
+* [`ft_putendl`](ft_putendl_fd.c)			- output string to stdout with newline.
 * [`ft_putnbr_fd`](ft_putnbr_fd.c)		- output integer to given file.
 
 
