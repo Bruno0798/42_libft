@@ -25,9 +25,9 @@ and basic algorithms. At 42, certain standard libraries are prohibited in our pr
 
 ### Functions
 
-
-* [`ft_isalpha`](ft_isalpha.c)<t>- alphabetic character test.
-* [`ft_isdigit`](ft_isdigit.c)<t>- decimal-digit character test.
+<pre>
+* [`ft_isalpha`](ft_isalpha.c)	- alphabetic character test.
+* [`ft_isdigit`](ft_isdigit.c)	- decimal-digit character test.
 * [`ft_isalnum`](ft_isalnum.c)	- alphanumeric character test.
 * [`ft_isascii`](ft_isascii.c)	- test for ASCII character.
 * [`ft_isprint`](ft_isprint.c)	- printing character test (space character inclusive).
@@ -60,7 +60,7 @@ and basic algorithms. At 42, certain standard libraries are prohibited in our pr
 * [`ft_putstr_fd`](ft_putstr_fd.c)- output string to given file.
 * [`ft_putendl`](ft_putendl.c)- output string to stdout with newline.
 * [`ft_putnbr_fd`](ft_putnbr_fd.c)- output integer to given file.
-
+</pre>
 
 #### Note
 
