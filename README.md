@@ -92,4 +92,4 @@ You should see a *libft.a* file and some object files (.o).
 
 
 ## NORMINETTE
-At 42 School, aligning to the [42 Norms](https://github.com/Bruno0798/42_libft/en_norm.pdf), the school's coding standard, is a fundamental expectation for all projects.
+At 42 School, aligning to the [42 Norms](en_norm.pdf), the school's coding standard, is a fundamental expectation for all projects.
