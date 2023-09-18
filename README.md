@@ -81,16 +81,33 @@ and basic algorithms. At 42, certain standard libraries are prohibited in our pr
 
 ## How does libft work?
 
-The objective is to produce a library named libft.a from the source files, enabling its use in future 42 projects as a reusable library.
+It aims to create a library called libft.a from the source files.
 
-To create that library, after downloading/cloning this project, **cd** into the project and call make:
-```
-$ git clone https://github.com/Bruno0798/42_Libft.git
-$ cd 42_Libft
-$ make
-```
+To create this library, clone the project:
 
-You should see a *libft.a* file and some object files (.o).
+    git clone git@github.com:Bruno0798/42_libft.git
+Enter the repository:
+
+    cd libft
+Run Make (to run the Makefile that will compile the source code and create the library):
+
+    make
+
+You should see a libft.a file and some object files (.o).
+
+Now to clean up (removing the .o files), call make clean:
+
+    make clean
+Now you just have to add this header at your .c files and use the Libft functions:
+
+    #include "libft.h"
+If you try to compile your .c files with clang using clang example.c you will get an undefined symbol error for Libft functions.
+
+You have to tell the file where your library resides:
+
+    clang example.c libft.a
+
+That's it. Now run it using ./a.out
 
 ## MAKEFILE RULES
 
