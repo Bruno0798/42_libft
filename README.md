@@ -6,7 +6,7 @@
 	:information_source: A C static library with recoded standard functions 
 </p>
 <p align="center"><a href="https://www.42porto.com" target="_blank"><img src="https://img.shields.io/static/v1?label=&message=Porto&color=000&style=for-the-badge&logo=42""></a></p>
-<p align="center"><img src="https://github.com/Bruno0798/Bruno0798/blob/main/42-project-badges/badges/ft_printfn.png?raw=true"> </p>
+<p align="center"><img src="https://github.com/Bruno0798/Bruno0798/blob/main/42-project-badges/badges/libftn.png?raw=true"> </p>
 <p align="center"> <strong>100/100</strong> ✅ </p>
 
 <p align="center">
