@@ -3,9 +3,6 @@
 </h1>
 
 <p align="center">
-	<b><i>Development repo for 42cursus' libft project</i></b><br>
-</p>
-<p align="center">
 	:information_source: A C static library with recoded standard functions 
 </p>
 <p align="center"><a href="https://www.42porto.com" target="_blank"><img src="https://img.shields.io/static/v1?label=&message=Porto&color=000&style=for-the-badge&logo=42""></a></p>
