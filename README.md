@@ -26,7 +26,7 @@ and basic algorithms. At 42, certain standard libraries are prohibited in our pr
 ### Functions
 
 
-* [`ft_isalpha`](ft_isalpha.c)			- alphabetic character test.
+* [`ft_isalpha`](src/ft_isalpha.c)			- alphabetic character test.
 * [`ft_isdigit`](ft_isdigit.c)			- decimal-digit character test.
 * [`ft_isalnum`](ft_isalnum.c)			- alphanumeric character test.
 * [`ft_isascii`](ft_isascii.c)			- test for ASCII character.
