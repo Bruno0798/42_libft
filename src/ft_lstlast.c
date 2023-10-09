@@ -6,13 +6,13 @@
 /*   By: bsousa-d <bsousa-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 15:26:32 by bsousa-d          #+#    #+#             */
-/*   Updated: 2023/10/09 15:12:39 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2023/10/09 15:16:51 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
 		return (0);

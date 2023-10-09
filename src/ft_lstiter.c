@@ -6,13 +6,13 @@
 /*   By: bsousa-d <bsousa-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 16:20:13 by bsousa-d          #+#    #+#             */
-/*   Updated: 2023/10/09 15:12:55 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2023/10/09 15:16:10 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst)
 		return ;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: bsousa-d <bsousa-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/13 17:01:32 by bsousa-d          #+#    #+#             */
-/*   Updated: 2023/06/20 14:33:15 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2023/10/09 15:30:42 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_substr(char const *s, size_t start, size_t len)
 	if (len == 0 || start >= ft_strlen(s))
 	{
 		str = (char *)malloc(sizeof(char) * 1);
+		if (!str)
+			return (NULL);
 		str[0] = '\0';
 		return (str);
 	}
