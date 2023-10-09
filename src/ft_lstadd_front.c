@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: bsousa-d <bsousa-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 15:03:26 by bsousa-d          #+#    #+#             */
-/*   Updated: 2023/10/07 15:13:13 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2023/10/09 14:51:19 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void ft_lstadd_front(t_list **lst, t_list *new)
 {
-	new->next = lst;
+	new->next = *lst;
 	*lst = new;
 }

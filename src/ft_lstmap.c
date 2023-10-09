@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: bsousa-d <bsousa-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 12:52:49 by bsousa-d          #+#    #+#             */
-/*   Updated: 2023/10/09 14:42:13 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2023/10/09 15:13:25 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,20 @@
 
 t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *new_lst;
-	t_list *new_node;
+	t_list	*node;
+	t_list	*head;
 
 	if (!lst || !f || !del)
-		return NULL;
-	new_lst = NULL;
-	while (lst)
+		return (NULL);
+	node = ft_lstnew(f(lst->content));
+	head = node;
+	while (lst->next)
 	{
-		new_node = ft_lstnew(f(lst->content));
-		if (!new_node)
-		{
-			ft_lstclear(&new_lst, del);
-			return NULL;
-		}
-		ft_lstadd_back(&new_lst, new_node);
 		lst = lst->next;
+		node->next = ft_lstnew(f(lst->content));
+		if (!node->next)
+			ft_lstclear(&head, del);
+		node = node->next;
 	}
-	return (new_lst);
+	return (head);
 }

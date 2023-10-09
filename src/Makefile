@@ -9,16 +9,20 @@ SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c f
 
 OBJS = $(SRCS:.c=.o)
 
+BONUS_SRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+
+BONUS_OBJS = $(BONUS_SRCS:.c=.o)
+
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
 
-bonus: $(OBJS)
-	ar rc $(NAME) $(OBJS)
+bonus: $(OBJS) $(BONUS_OBJS)
+	ar rc $(NAME) $(OBJS) $(BONUS_OBJS)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
@@ -26,5 +30,5 @@ fclean: clean
 re: fclean all
 
 so:
-	$(CC) -fPIC $(CFLAGS) $(SRCS)
-	cc -shared -o libft.so $(OBJS) 
+	$(CC) -fPIC $(CFLAGS) $(SRCS) $(BONUS_SRCS)
+	cc -shared -o libft.so $(OBJS) $(BONUS_OBJS)
